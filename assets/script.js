@@ -2,14 +2,9 @@
 const completeButtons = document.querySelectorAll('.button.is-primary');
 
 // Add a click event listener to each button
-// completeButtons.forEach((button) => {
-//   button.addEventListener('click', toggleCardState);
-// });
-
-const firstButton = document.querySelector('.firstButton')
-
-firstButton.addEventListener('click', () => {console.log("Button clicked")});
-firstButton.addEventListener('click', toggleCardState);
+completeButtons.forEach((button) => {
+  button.addEventListener('click', toggleCardState);
+});
 
 // Function to toggle the card state
 function toggleCardState(event) {
