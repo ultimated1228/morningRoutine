@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J&J Morning Routine</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <header class="title is-3">
+        Jude and Jade Morning Routine
+    </header>
+    <section class="section columns mainSection">
+        <div class="column is-one-half mainColumn judeTasks">
+            <div class="title is-5 childHeader">
+                Jude's Tasks
+            </div>
+            <div class="cardSpacing">
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Brush Teeth
+                    </div>
+                    <button class="column button is-primary firstButton">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Get Dressed
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Pack Backpack
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Comb Hair
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Eat Breakfast
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+            </div>
+        </div>
+        <div class="column mainColumn jadeTasks">
+            <div class="title is-5 childHeader">
+                Jade's Tasks
+            </div>
+            <div class="cardSpacing">
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Brush Teeth
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Get Dressed
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Pack Backpack
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Brush Hair
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+                <li class="columns todoCard">
+                    <div class="column is-one-half">
+                        Eat Breakfast
+                    </div>
+                    <button class="column button is-primary">
+                        Complete!
+                    </button>
+                </li>
+            </div>
+        </div>
+    </section>
+    <button class="js-modal-trigger button is-info" data-target="jadeModal">
+        Open Modal
+    </button>
+
+    <!-- Jude's Modal -->
+    <div class="modal judeModal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="modalCard">
+                <div class="thumbs-up">
+                    👍
+                </div>
+                <hr style="background-color: black; opacity: 60%; border:2px, solid black; width:90%; margin: auto;">
+                <br>
+                <div>
+                    Nice work! You completed all your morning tasks!<br><br>
+                    If you would like to send a custom message to your parents please input it below!
+                </div>
+                <br>
+                <hr style="background-color: black; opacity: 60%; border:2px, solid black; width:90%; margin: auto;">
+                <br>
+                <input class="input is-primary is-rounded is-normal" type="text"
+                    value="I finished all my morning tasks! Jude" style="width:90%">
+                    <br><br>
+                <button class="button is-success" style="margin:auto">
+                    Send
+                </button>
+                <br>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <!-- Jade's Modal -->
+
+    <div class="modal jadeModal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="modalCard">
+                <div class="thumbs-up">
+                    👍
+                </div>
+                <hr style="background-color: black; opacity: 60%; border:2px, solid black; width:90%; margin: auto;">
+                <br>
+                <div>
+                    Nice work! You completed all your morning tasks!<br><br>
+                    If you would like to send a custom message to your parents please input it below!
+                </div>
+                <br>
+                <hr style="background-color: black; opacity: 60%; border:2px, solid black; width:90%; margin: auto;">
+                <br>
+                <input class="input is-primary is-rounded is-normal" type="text"
+                    value="I finished all my morning tasks! Jade" style="width:90%">
+                    <br><br>
+                <button class="button is-success" style="margin:auto">
+                    Send
+                </button>
+                <br>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

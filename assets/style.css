@@ -1,0 +1,83 @@
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+header{
+    margin:10px;
+    padding:10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgb(219, 219, 219);
+    border: 2px solid black ;
+}
+
+.mainSection{
+    gap: 10px;
+    border: 2px solid black;
+    margin:10px;
+    padding:10px;
+}
+
+.mainColumn{
+    border: 2px solid black;
+    padding:10px;
+}
+
+.childHeader {
+    text-align: center;
+
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: 1px solid white !important;
+    box-shadow: 1px 1px 4px rgb(255, 255, 255);
+}
+
+.todoCard{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 5px rgb(219, 219, 219);
+    margin: 5px;
+    background-color: rgba(227, 2, 2, 0.5);
+    color: white;
+    font-weight: bold;
+}
+
+.completedCard{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 5px 5px rgb(219, 219, 219);
+    margin: 5px;
+    background-color: rgba(0, 128, 0, .6);
+    color: white;
+    font-weight: bold;
+    text-decoration: line-through;
+}
+
+.todoCardWords{
+    color: white;
+    font-weight: bold;
+}
+
+.cardSpacing{
+    margin:10px;
+}
+
+.modalCard{
+    width: 400px;
+    background-color: white;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.thumbs-up{
+    font-size:100px;
+
+}
