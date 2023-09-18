@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Script is running.');
 // Get all the "Complete!" buttons
 const completeButtons = document.querySelectorAll('.button.is-primary');
 
@@ -13,8 +15,10 @@ function toggleCardState(event) {
   const mainColumn = card.closest('.mainColumn');
   const mainSection = mainColumn.closest('.mainSection');
   const buttonsInMainColumn = mainColumn.querySelectorAll('.button.is-primary');
+console.log(button.textContent === 'Complete!')
+console.log(button.textContent.trim () === 'Complete!')
 
-  if (button.textContent === 'Complete!') {
+  if (button.textContent.trim() === 'Complete!') {
     // Card is not completed yet
     button.textContent = 'Re-open';
     card.classList.add('completedCard');
@@ -86,4 +90,5 @@ modalTriggerButton.addEventListener('click', () => {
 // Add a click event listener to the modal close button to close the modal
 modal.querySelector('.modal-close').addEventListener('click', () => {
   modal.classList.remove('is-active'); // Remove the 'is-active' class to hide the modal
+});
 });
