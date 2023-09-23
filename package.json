@@ -1,0 +1,17 @@
+{
+  "name": "morningroutine",
+  "version": "1.0.0",
+  "description": "Mornings are the toughest part of the day for my family. This app is for my kids to check-off their morning routine tasks so they can ensure everything they need to do is done, and hopefully have some more fun doing it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "twilio": "^4.18.0"
+  }
+}
