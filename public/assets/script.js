@@ -67,21 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
   for (let i = 0; i < textButton.length; i++) {
 
     textButton[i].addEventListener('click', (event) => {
-      const userInput = document.querySelector(".input").value
+      const userInput = document.querySelectorAll(".input")[i].value
       console.log(event.target.dataset.receiver)
-      // fetch('https://textbelt.com/text', {
-      //   method: 'post',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({
-      //     phone: '7738496878',
-      //     message: userInput,
-      //     key: 'textbelt',
-      //   }),
-      // }).then(response => {
-      //   return response.json();
-      // }).then(data => {
-      //   console.log(data);
-      // });
       fetch("/api/text", {
         method: "post", headers: {"Content-Type":"application/json"}, body: JSON.stringify({
           body: userInput
