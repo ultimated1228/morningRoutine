@@ -98,40 +98,4 @@ document.addEventListener('DOMContentLoaded', function () {
       })
     }
 
-
-
-
-// MODAL TESTING CODE
-// Get the modal elements
-const judeModal = document.querySelector('.judeModal');
-    const jadeModal = document.querySelector('.jadeModal');
-    const judeModalTriggerButton = document.querySelector('.judeTasks .js-modal-trigger');
-    const jadeModalTriggerButton = document.querySelector('.jadeTasks .js-modal-trigger');
-
-    // Add click event listeners to open the modals
-    judeModalTriggerButton.addEventListener('click', () => {
-      showModal('.judeModal');
-    });
-
-    jadeModalTriggerButton.addEventListener('click', () => {
-      showModal('.jadeModal');
-    });
-
-
-
-
-    // MODAL TESTING CODE
-    // Get the modal element and the button to trigger it
-    const modal = document.querySelector('.jadeModal');
-    const modalTriggerButton = document.querySelector('.js-modal-trigger');
-
-    // Add a click event listener to the button to open the modal
-    modalTriggerButton.addEventListener('click', () => {
-      modal.classList.add('is-active'); // Add the 'is-active' class to show the modal
-    });
-
-    // Add a click event listener to the modal close button to close the modal
-    modal.querySelector('.modal-close').addEventListener('click', () => {
-      modal.classList.remove('is-active'); // Remove the 'is-active' class to hide the modal
-    });
   });

@@ -8,21 +8,27 @@ console.log(authToken)
 
 
 router.post('/', (req, res) => {
-  //for loop .split the numbers from the env to maintain the array
-  client.messages
-    .create({
+  const toNumbers = process.env.toNumber.split(',');
+
+  const messagePromises = toNumbers.map((toNumber) => {
+    return client.messages.create({
       body: req.body.body,
       from: process.env.fromNumber,
-      to: process.env.toNumber
+      to: toNumber.trim(),
+    });
+  });
+
+  Promise.all(messagePromises)
+    .then((messages) => {
+      messages.forEach((message) => {
+        console.log(`Message SID: ${message.sid}`);
+      });
+      return res.json({ message: "Messages Sent" });
     })
-    .then(message => {
-      console.log(message.sid)
-      return res.json({ message: "Message Sent" })
-    })
-    // .catch(err => {
-    //   res.status(500).json("Error sending message")
-    // })
-    // .done();
-})
+    .catch((err) => {
+      console.error(err);
+      res.status(500).json("Error sending messages");
+    });
+});
 
 module.exports = router;
